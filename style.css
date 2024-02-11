@@ -1,0 +1,307 @@
+/* ----------------------------------------------------------------
+    [Html, && body ]
+-----------------------------------------------------------------*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	background-color: skyblue;
+}
+
+/* ----------------------------------------------------------------
+    [ grass, sky && road  ]
+-----------------------------------------------------------------*/
+
+.grass, .sky, .road {
+	position: relative;
+}
+
+/* ----------------------------------------------------------------
+    [ The sun ]
+-----------------------------------------------------------------*/
+
+.sun {
+  width: 90px;
+  background-color: skyblue;
+  position: relative;
+  height: 90px;
+}
+
+/* ----------------------------------------------------------------
+    [ The sky ]
+-----------------------------------------------------------------*/
+
+.sky {
+	height: 40%;
+	background: skyblue;
+}
+
+/* ----------------------------------------------------------------
+    [ The grass part ]
+-----------------------------------------------------------------*/
+
+.grass {
+	height: 30%;
+	background: seagreen;
+	border: 5px solid dashed#fff;
+	align-items: center;
+	text-align: center;
+}
+
+/* ----------------------------------------------------------------
+    [ The road ]
+-----------------------------------------------------------------*/
+
+.road {
+
+	height: 30%;
+	background: dimgray;
+	border: 5px solid dashed#fff;
+	align-items: center;
+	text-align: center;
+
+}
+
+/* ----------------------------------------------------------------
+    [ lines ]
+-----------------------------------------------------------------*/
+
+.lines {
+	box-sizing: border-box;
+	border: 5px dashed #fff;
+	height:0px;
+	width: 100%;
+	position: absolute;
+	top: 45%;
+}
+
+/* ----------------------------------------------------------------
+    [ lines2  ]
+-----------------------------------------------------------------*/
+
+.lines2 {
+box-sizing: border-box;
+	border: 5px dashed #fff;
+	height: 0px;
+	width: 100%;
+	position: absolute;
+	top: 45%;
+}
+
+/* ----------------------------------------------------------------
+    [ carPink ]
+-----------------------------------------------------------------*/
+
+.carPink {
+	position: absolute;
+	top: 170px;
+	left: 0px;
+	margin-top: -20px;
+	animation-name: drive;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.77,1,.28);
+    
+}
+
+/* ----------------------------------------------------------------
+    [ carYellow ]
+-----------------------------------------------------------------*/
+
+.carYellow {
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	margin-top: -20px;
+	animation-name: drive;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+    
+}
+
+/* ----------------------------------------------------------------
+    [ redCar ]
+-----------------------------------------------------------------*/
+
+.redcar {
+	position: absolute;
+	top: -150;
+	margin-top: -10px;
+	left: 0;
+	animation-name: drive;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.30,5,.8);
+}
+
+/* ----------------------------------------------------------------
+    [ TruckWhite ]
+-----------------------------------------------------------------*/
+
+.TruckWhite {
+	position: absolute;
+	top: -180;
+	margin-top: -10px;
+	left: 0;
+	animation-name: drive;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.40,4,.8);
+}
+
+/* ----------------------------------------------------------------
+    [ ambulance ]
+-----------------------------------------------------------------*/
+.ambulance {
+	position: absolute;
+	top: 200;
+	margin-top: 40px;
+	left: 0;
+	animation-name: drive;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.50,3,.8);
+}
+
+/* ----------------------------------------------------------------
+    [ carGreen ]
+-----------------------------------------------------------------*/
+ 
+  .carGreen {
+  position: absolute;
+	top: 200;
+	margin-top: 90px;
+	left: 0;
+	animation-name: drive ;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.77,1,.28);
+	animation-direction: reverse;
+  }
+
+/* ----------------------------------------------------------------
+    [ carGrey ]
+-----------------------------------------------------------------*/
+
+  .carGrey {
+  position: absolute;
+	top: 100;
+	margin-top: 180px;
+	left: 0;
+	animation-name: drive ;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.27,1,.18);
+	animation-direction: reverse;
+  }
+
+
+/* ----------------------------------------------------------------
+    [ truckBlue ]
+-----------------------------------------------------------------*/
+
+  .TruckBlue {
+  position: absolute;
+	top: 100;
+	margin-top: 10px;
+	left: 0;
+	animation-name: drive ;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.87,5,.58);
+	animation-direction: reverse;
+  }
+
+  /* ----------------------------------------------------------------
+    [ carOpange ]
+-----------------------------------------------------------------*/
+
+.carOrange {
+  	position: absolute;
+	top: 10;
+	margin-top: 40px;
+	left: 0;
+	animation-name: drive;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,.57,2,.48);
+	animation-direction: reverse;
+  }
+
+/* ----------------------------------------------------------------
+    [ pedrestians part ]
+-----------------------------------------------------------------*/
+
+  /* .pedestran1 {
+	position: absolute;
+	top: 10;
+	margin-top: 90px;
+	left: 0;
+	animation-name: drive;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(20,.127,32,.78);
+	animation-direction: reverse;
+  } */
+/* ----------------------------------------------------------------
+    [ cloud ]
+-----------------------------------------------------------------*/
+.cloud {
+	position: absolute;
+}
+
+/* ----------------------------------------------------------------
+    [ cloud:nth-child(1) ]
+-----------------------------------------------------------------*/
+.cloud:nth-child(1) {
+	width: 200px;
+	top: 120px;
+	opacity: 0.5;
+	animation: wind 50s linear infinite reverse;
+
+}
+
+/* ----------------------------------------------------------------
+    [ cloud:nth-child(2) ]
+-----------------------------------------------------------------*/
+
+.cloud:nth-child(2) {
+	width: 300px;
+	top: 0;
+	animation: wind 30s linear infinite reverse;
+}
+
+/* ----------------------------------------------------------------
+    [ KeyFrames drive ]
+-----------------------------------------------------------------*/
+@keyframes drive {
+	from {transform: translate(-200px)}
+	to{ transform:translateX(1900px)}
+}
+
+
+/* ----------------------------------------------------------------
+    [ Key wind ]
+-----------------------------------------------------------------*/
+
+@keyframes wind {
+ from{left: -300px}
+ to{left: 100%}
+}
+
+
+/* ----------------------------------------------------------------
+    [ Keyframes jumps]
+-----------------------------------------------------------------*/
+
+@keyframes jump {
+	0%{left: -300px}
+	50%{top: -100px}
+	100% {top: -40px}
+}
+
+/* ----------------------------------------------------------------
+    [ The End ]
+-----------------------------------------------------------------*/
